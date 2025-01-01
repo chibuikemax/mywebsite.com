@@ -1,0 +1,669 @@
+<doctype html>
+<head>
+<style>
+.splash-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splash-logo {
+  margin-bottom: 20px;
+}
+
+.splash-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.splash-text {
+  text-align: center;
+}
+
+.splash-text h1 {
+  font-size: 24px;
+}
+
+.splash-text p {
+  font-size: 18px;
+}
+
+.splash-progress {
+  width: 200px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #337ab7;
+  border-radius: 5px;
+}
+.ju{
+width: 170%;
+padding: 3px;
+animation: scale 3s ease-in-out infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+p{
+opacity: 0.5;
+}
+header {
+  cursor: pointer;
+    color: #fff;
+    padding: 1em;
+    text-align: center
+}
+
+nav a {
+  cursor: pointer;
+  text-decoration-color: #2d2d8b;
+    color: #fff;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+.iframe{
+position: absolute;
+  top: 5px; /* Adjust text position */
+  left: 750px; /* Adjust text position */
+padding: 0;
+background-color: transparent;
+width: 275px;
+height: 210px;
+border: none;
+border-radius: 15px;
+}
+.md{
+background-color: white;
+font-family: verdana;
+padding: 4px;
+margin-left: 49px;
+border: none;
+border-radius: 10px;
+color: black;
+position: absolute;
+  top: 200px; /* Adjust text position */
+  left: 800px; /* Adjust text position */
+
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+img{
+width: 210px;
+height: 170px;
+border-radius: 10px;
+padding: 3px;
+}
+.main {
+  float: left;
+  width: 20%;
+  padding: 0 20px;
+}
+.bty{
+color: white;
+background-color: #2d2d8b;
+border: none;
+cursor: pointer;
+border-radius: 20px;
+font-size: 19px;
+animation: blink 3s infinite;
+padding: 10px;
+}
+@keyframes blink{
+ 0%{
+ background-color: #2d2d8b;
+ }
+100%{
+ background-color: blue;
+ }
+}
+.bt{
+color: white;
+background-color: #38cf38;
+border: none;
+cursor: pointer;
+border-radius: 10px;
+font-size: 8px;
+padding: 10px;
+}
+.bt:hover {
+background-color: green;
+}
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 25%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.tr{
+position: absolute;
+top: 300px;
+left: 700px;
+animation: hover 0.75s infinite;
+width: 40px;
+height: 40px;
+background-color: tomato;
+border: none;
+border-radius: 20px;
+}
+.te{
+position: absolute;
+top: 250px;
+left: 650px;
+width: 40px;
+height: 40px;
+animation: flip 0.75s infinite;
+background-color: blue;
+border: none;
+border-radius: 20px;
+}
+.ta{
+position: absolute;
+top: 250px;
+left: 700px;
+width: 40px;
+height: 40px;
+animation: scale 0.75s infinite;
+background-color: green;
+border: none;
+border-radius: 20px;
+}
+.tb{
+position: absolute;
+top: 300px;
+left: 650px;
+width: 40px;
+height: 40px;
+animation: rotate 0.75s infinite;
+background-color: orange;
+border: none;
+border-radius: 20px;
+}
+@keyframes rotate{
+0%{
+top: 301px;
+left: 650px;
+}
+100%{
+top: 250px;
+left: 700px;
+}
+}
+@keyframes scale{
+0%{
+top: 252px;
+left: 700px;
+}
+100%{
+top: 301px;
+left: 650px;
+}
+}
+@keyframes hover{
+0%{
+top: 302px;
+left: 702px;
+}
+100%{
+top: 250px;
+left: 650px;
+}
+}
+@keyframes flip{
+0%{
+top: 251px;
+left: 650px;
+}
+100%{
+top: 301px;
+left: 701px;
+}
+}
+.lu{
+float: left;
+width: 20%;
+  border-left: 1px solid #f1f1f1;
+}
+.lr{
+float: left;
+width: 20%;
+}
+.le{
+float: left;
+width: 20%;
+}
+.ld{
+float: left;
+width: 10%;
+}
+.tre{
+  float: left;
+  width: 10%;
+  text-align: center;
+}
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.mu{
+background-color: white;
+font-family: verdana;
+padding: 4px;
+margin-left: 49px;
+border: none;
+border-radius: 10px;
+color: black;
+position: absolute;
+  top: 20px; /* Adjust text position */
+  left: 560px; /* Adjust text position */
+
+}
+.ma{
+background-color: white;
+font-family: verdana;
+padding: 4px;
+margin-left: 49px;
+border: none;
+border-radius: 10px;
+color: black;
+position: absolute;
+  top: 200px; /* Adjust text position */
+  left: 560px; /* Adjust text position */
+
+}
+.me{
+background-color: white;
+font-family: verdana;
+padding: 4px;
+margin-left: 49px;
+border: none;
+border-radius: 10px;
+color: black;
+position: absolute;
+  top: 20px; /* Adjust text position */
+  left: 800px; /* Adjust text position */
+
+}
+.luy{
+width: 25%;
+float: left;
+}
+.tra{
+overflow-x: auto;
+width: 1100px;
+}
+.scrollable-content{
+display: flex;
+}
+.ll{
+float: left;
+width: 10%;
+}
+.text{
+color: green;
+font-family: Arial black;
+font-size: 2em;
+position: absolute;
+top: 500px;
+left: 1000px;
+}
+body{
+ margin: 0;
+ padding: 0;
+ background-size: cover;
+ background-position: center;
+ overfow: hidden;
+ background: linear-gradient(-40deg,green,white);
+ backgrouud-size: 100% 100%;
+ animation: move 1s ease infinite;
+ }
+@keyframes move{
+0%{
+ background-position: 0% 50%;
+ }
+50%{
+ background-position: 20% 50%;
+ }
+100%{
+ background-positon: 400% 0%;
+ }
+}
+nav ul{
+ list-style: ordered;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: space-between;
+ }
+* {
+  box-sizing: border-box;
+}
+video{
+  width: 200px;
+ height: 250px;
+ border-radius: 59px;
+ border: 2px solid;
+ border-color: blue;
+ padding: 20px;
+ }
+.like{
+ background-color:  blue;
+ float: right;
+ border: none;
+ border-radius: 50px;
+ width: 200px;
+ height: 20px;
+ cursor: pointer;
+ color: white;
+}
+title{
+  border-radius: 30px;
+}
+#header{
+ text-align: left;
+ font-family: Verdana;
+ font-size: 40px;
+ font-weight: bold;
+ padding: 15px;
+ background: linear-gradient(to left,blue,black);
+ background-size: 400% 100%;
+ animation: move 20s ease infinite;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+@keyframes move{
+0%{
+ background-position: 0 0;
+ }
+2%{
+ background-position: 50% 0;
+ }
+10%{
+ background-position: 0 50%;
+ }
+20%{
+ background-position: 30% 10%;
+ }
+30%{
+ background-position: 150% 30%;
+}
+100%{
+ background-position: 400% 400%;
+ }
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <!-- Splash page content -->
+  <div id="splash" class="splash-container">
+    <div class="splash-logo">
+      <div class="tr"></div>
+<div class="te"></div>
+<div class="ta"></div>
+<div class="tb"></div>
+    </div>
+    <div class="splash-text">
+    </div>
+    <div class="splash-progress">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+  </div>
+  
+  <!-- Main website content will be loaded here -->
+  <div id="main-content" style="display:none;">
+    <!-- Your website content goes here -->
+   <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+            <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 
+             sans-serif;caret-color: #2d2d8b;accent-color: blue;color:green;"title="shart.com">Shart</h1>
+            </ul>
+        </nav>
+    </header>
+</header>
+<div class="lu">
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0066.jpg"title="brans">
+<p>Rated top at affillate market <br>as top products</p>
+<button class="bty"title="buynow">Buy now</button><br>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0062.jpg"title="shoes">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0050.jpg"title="best shoes">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0105.jpg"title="worth 50k duss">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0106.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0108.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0109.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0116.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0123.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0000.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241031-WA0004.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241031-WA0001.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0037.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0036.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0034.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0028.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241031-WA0005.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0005.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0006.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0001.jpg">
+
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241030-WA0152.jpg">
+<p>Marketed in holland over<br>4.6 billionbuyers</p>
+<button class="bty"title="buynow">Buy now</button>
+
+</div>
+<div class="lr">
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0045.jpg"title="afordable">
+<p>Best product in stock </p><br>
+<button class="bty"title="buy now">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0047.jpg"title="cheap rating">
+<p>$9.7 Affordable for 3% discount</p>
+<br>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0003.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0010.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0018.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241203-WA0030.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241204-WA0007.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+
+</div>
+
+  <div class="le">
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0047.jpg">
+<p> $32High on demand in arab countries</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241102-WA0052.jpg">
+<p>local in modern cities $500</p><br>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241204-WA0008.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241204-WA0004.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241203-WA0032.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241203-WA0031.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241203-WA0037.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241204-WA0007.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0023.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0003.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0010.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0018.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241203-WA0030.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241204-WA0007.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0023.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0003.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0010.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241202-WA0018.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+<img src="C:\Users\chibuike\IMG-20241203-WA0030.jpg">
+<p>$88</p>
+<button class="bty"title="buynow">Buy now</button>
+</div>
+<div class="ld">
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0054.jpg">
+<button class="bt"title="buynow">Buy</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0048.jpg">
+<button class="bt"title="buynow">Buy</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0055.jpg">
+<button class="bt"title="buynow">Buy</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0096.jpg">
+<button class="bt"title="buynow">Buy</button> 
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0096.jpg">
+<button class="bt"title="buynow">Buy</button>
+</div>
+<div class="ld">
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0120.jpg">
+<button class="bt">Buy</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0118.jpg"> 
+<button class="bt">Buy</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241104-WA0000.jpg"> 
+<button class="bt">Buy</button> 
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0121.jpg">
+<button class="bt">Buy</button>
+<img src="C:\Users\chibuike\3D Objects\IMG-20241103-WA0112.jpg"title="image">
+
+<button class="bt">Buy</button>
+</div> 
+  </div>
+  
+  <script>
+    // Simulate progress bar animation
+    var progressBar = document.getElementById("progress-bar");
+    var width = 0;
+    var interval = setInterval(function() {
+      width += 1;
+      progressBar.style.width = width + "%";
+      if (width >= 100) {
+        clearInterval(interval);
+        // Redirect to main website after 4 seconds
+        setTimeout(function() {
+          document.getElementById("splash").style.display = "none";
+          document.getElementById("main-content").style.display = "block";
+        }, 7000);
+      }
+    }, 10);
+  </script>
+</body>
+</html>
